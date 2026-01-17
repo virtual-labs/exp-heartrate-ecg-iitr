@@ -1,4 +1,4 @@
-## Contributors
+
 
 ### Lab Proposer
 
@@ -6,7 +6,7 @@
 | :----: | :------------: | :---------------------------------------------: | :---------: | :-------: |
 |    1   | Prof. RS Anand | [anandfee@gmail.com](mailto:anandfee@gmail.com) | IIT Roorkee | Professor |
 
-### Developed by Virtual Labs Team IITR with support from
+### Developed by Virtual Labs Team IITR 
 
 <!-- | S. No. | Name                 | Email                                                     | Institute   | Position            |
 | :----: | :------------: | :---------------------------------------------------------: | :-----------: | :-------------------: |
