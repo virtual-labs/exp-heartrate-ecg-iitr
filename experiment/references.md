@@ -1,4 +1,4 @@
- ## References<br>
+
 1. Leslie Cromwell, Fred J. Weibell, Erich A. Pfeiffer,<i>Biomedical Instrumentation and Measurements</i>,
 Prentice Hall, 2nd ed., 1996.<br>
 2. Wills J., J. Tompkins (Ed.), <i>Biomedical Digital Signal Processing: C-Language Examples and Laboratory Experiments for the IBM PC</i>.<br>
