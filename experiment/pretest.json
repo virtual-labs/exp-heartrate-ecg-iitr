@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "The QRS complex corresponds to",
+    "answers": {
+      "a": "Atrial repolarization",
+      "b": "Ventricular depolarization",
+      "c": "Ventricular repolarization",
+      "d": "Cardiac relaxation"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The most prominent peak used for heart-rate calculation is",
+    "answers": {
+      "a": "P-peak",
+      "b": "Q-peak",
+      "c": "R-peak",
+      "d": "T-peak"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Heart rate in beats per minute (BPM) is calculated as",
+    "answers": {
+      "a": "RR × 60",
+      "b": "60 / RR",
+      "c": "RR / 60",
+      "d": "RR²"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The main objective of ECG signal processing before peak detection is to",
+    "answers": {
+      "a": "Increase heart rate",
+      "b": "Reduce noise and enhance QRS complex",
+      "c": "Remove R-peaks",
+      "d": "Compress ECG data"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The Pan–Tompkin's algorithm is mainly used for",
+    "answers": {
+      "a": "ECG compression",
+      "b": "ECG filtering only",
+      "c": "QRS and R-peak detection",
+      "d": "Blood pressure analysis"
+    },
+    "correctAnswer": "c"
+  }
+]
