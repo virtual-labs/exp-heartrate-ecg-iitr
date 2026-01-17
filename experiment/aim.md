@@ -1,1 +1,1 @@
-### Aim of the experiment
+## To determine the heart rate from ECG signals by detecting R-peaks using the Pan–Tompkin's algorithm with threshold-based decision logic. 
