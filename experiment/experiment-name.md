@@ -1,1 +1,1 @@
-## Experiment name
+## Determination of Heart rate using ECG signal.
