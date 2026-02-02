@@ -9,7 +9,7 @@ const PT_STAGES = [
 ];
 
 let state = {
-    selectedFile: 'images/ecg1.csv', 
+    selectedFile: '/images/ecg1.csv', 
     rawSignal: [],
     ptSignals: {}, 
     timeAxis: [],
