@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="css\style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -25,9 +26,9 @@
                 <div class="input-group" style="margin-bottom: 8px;">
                     <h5><b>SELECT DATASET</b></h5><br>
                     <select id="signalSelect" style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #ccc; font-family: inherit;">
-                        <option value="images/ecg1.csv">Dataset 1</option>
-                        <option value="images/ecg2.csv">Dataset 2</option>
-                        <option value="images/ecg3.csv">Dataset 3</option>
+                        <option value="/images/ecg1.csv">Dataset 1</option>
+                        <option value="/images/ecg2.csv">Dataset 2</option>
+                        <option value="/images/ecg3.csv">Dataset 3</option>
                     </select>
                 </div>
 
@@ -48,7 +49,7 @@
                 <h3><b>Pan-Tompkins Method</b></h3>
 
                 <div id="ptStartContainer" style="padding: 20px 0; text-align: center;">
-                    <button id="btnPtStart" class="btn-pt-big" disabled>Start</button>
+                    <button id="btnPtStart" class="btn-pt-big">Start</button>
                 </div>
 
                 <div id="ptStepsContainer" style="display: none;">
@@ -64,7 +65,7 @@
 
         <main class="content">
             <div class="zoom-controls">
-                <button id="btnZoomToggle">Zoom In</button>
+                <button id="btnZoomToggle" disabled>Zoom In</button>
             </div>
 
             <div class="graph-area">
