@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determination of Heart Rate using ECG signals</title>
+    
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+    <div class="header-spacer"></div>
+    
+    <span class="header-title">Determination of Heart Rate using ECG Signals</span>
+    
+    <button class="small-btn" id="btnInstructions"><b>INSTRUCTIONS</b></button>
+</header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <section class="panel">
+                <h3><b>Input Panel</b></h3>
+                
+                <div class="input-group" style="margin-bottom: 8px;">
+                    <h5><b>SELECT DATASET</b></h5><br>
+                    <select id="signalSelect" style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #ccc; font-family: inherit;">
+                        <option value="images/ecg1.csv">Dataset 1</option>
+                        <option value="images/ecg2.csv">Dataset 2</option>
+                        <option value="images/ecg3.csv">Dataset 3</option>
+                    </select>
+                </div>
+
+                <button id="btnLoad">Load Raw Signal</button>
+
+                <div class="slider-container">
+                    <div class="slider-label">
+                        <span><b>Time Interval</b></span>
+                        <span id="intervalValue">10.0s</span>
+                    </div>
+                    <input type="range" id="timeSlider" min="0.2" max="10.0" step="0.1" value="10.0">
+                </div>
+
+                <button id="btnReset">Reset</button>
+            </section>
+
+            <section class="panel">
+                <h3><b>Pan-Tompkins Method</b></h3>
+
+                <div id="ptStartContainer" style="padding: 20px 0; text-align: center;">
+                    <button id="btnPtStart" class="btn-pt-big">Start</button>
+                </div>
+
+                <div id="ptStepsContainer" style="display: none;">
+                    <div id="ptChecklist" style="margin-bottom: 10px;"></div>
+                    <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+                        <button id="btnPtPrev" disabled>Previous</button>
+                        <button id="btnPtNext">Next</button>
+                    </div>
+                    <button id="btnDisplayResult" class="result-btn" style="display: none;">Display Result</button>
+                </div>
+            </section>
+        </aside>
+
+        <main class="content">
+            <div class="zoom-controls">
+                <button id="btnZoomToggle" disabled>Zoom In</button>
+            </div>
+
+            <div class="graph-area">
+                <div class="chart-wrapper displaychart">
+                    <button id="btnDownload1" class="graph-download-btn">Download</button>
+                    <canvas id="chart1"></canvas>
+                </div>
+
+                <div class="popup-slider" id="popupScrollContainer">
+                    <input type="range" id="scrollSlider" min="0" max="100" value="0" style="width: 90%;">
+                </div>
+
+                <div class="chart-wrapper displaychart">
+                    <button id="btnDownload2" class="graph-download-btn">Download</button>
+                    <canvas id="chart2"></canvas>
+                </div>
+            </div>
+
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th><b>Parameter</b></th>
+                            <th><b>R-R Interval (sec)</b></th>
+                            <th><b>Heart Rate (BPM)</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong><b>Current</b></strong></td>
+                            <td id="valRRCurrent">-</td>
+                            <td id="valHRCurrent">-</td>
+                        </tr>
+                        <tr>
+                            <td><strong><b>Average</b></strong></td>
+                            <td id="valRRAvg">-</td>
+                            <td id="valHRAvg">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <article class="modal" id="modalContent">
+            <h3>Instructions</h3>
+            <div style="margin-top: 10px; line-height: 1.6; color: #555;">
+                <p><b>1.</b> <strong>Select Dataset:</strong> Choose an ECG dataset from the dropdown menu in the Input Panel. </p>
+                <p><b>2.</b> <strong>Load Raw Signal:</strong> Click the Load Raw Signal button to load and display the raw ECG signal.</p>
+                <p><b>3.</b> <strong>View Initial Graph:</strong> After loading, the Raw ECG Signal will be visible.</p>
+                <p><b>4.</b> <strong>Time Window Adjustment:</strong> Adjust the time slider to change the visible duration of the ECG signal in seconds.</p>
+                <p><b>5.</b> <strong>Start Pan-Tompkins Method:</strong>Adjust the time slider to change the visible duration of the ECG signal in seconds.</p>
+                <p><b>6.</b> <strong>Step-by-Step Analysis:</strong> Use the Next button to view each processing stage and Previous button to go back</p>
+                <p><b>7.</b> <strong>Display Results:</strong> Click Display Result to view RR interval and heart rate values.</p>
+                <p><b>8.</b> <strong>Zoom:</strong> Use the zoom button to inspect peaks..</p>
+                <p><b>9.</b> <strong>Download:</strong> Download graphs using the Download buttons.</p>
+                <p><b>10.</b> <strong>Reset:</strong> Use the Reset button to restart the experiment.</p>
+            </div>
+        </article>
+    </div>
+
+    <div id="toast" class="toast">Graph Downloaded Successfully</div>
+
+    <footer class="copyright">
+        © Copyright 2026 Virtual Labs, IIT Roorkee
+    </footer>
+
+    <script src="js\data.js"></script>
+    <script src="js\page.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>

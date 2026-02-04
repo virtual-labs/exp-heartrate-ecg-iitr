@@ -1,0 +1,52 @@
+[
+  {
+    "question": "In Pan–Tompkin's algorithm, band-pass filtering is applied mainly to",
+    "answers": {
+      "a": "Detect RR interval",
+      "b": "Enhance QRS complex and suppress noise",
+      "c": "Remove R-peaks",
+      "d": "Amplify baseline wander"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The derivative stage of Pan–Tompkins emphasizes",
+    "answers": {
+      "a": "Signal amplitude",
+      "b": "Signal slope",
+      "c": "Signal baseline",
+      "d": "Signal frequency only"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Adaptive thresholding in Pan–Tompkins is required because",
+    "answers": {
+      "a": "ECG amplitude is always constant",
+      "b": "Noise level changes with time",
+      "c": "R-peaks have fixed amplitude",
+      "d": "Thresholding is optional"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Thresholding method detects R-peaks based on",
+    "answers": {
+      "a": "Frequency spectrum",
+      "b": "Signal slope",
+      "c": "Amplitude comparison",
+      "d": "Phase information"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Heart rate is finally calculated using",
+    "answers": {
+      "a": "ECG amplitude",
+      "b": "Mean RR interval",
+      "c": "QRS width",
+      "d": "Signal power"
+    },
+    "correctAnswer": "b"
+  }
+]

@@ -1,0 +1,97 @@
+
+/home/runner/work/exp-heartrate-ecg-iitr/exp-heartrate-ecg-iitr/experiment/simulation/js/data.js
+    3:7   warning  'PT_STAGES' is assigned a value but never used  no-unused-vars
+   26:16  warning  'loadECGData' is defined but never used         no-unused-vars
+  101:10  warning  'runPanTompkins' is defined but never used      no-unused-vars
+
+/home/runner/work/exp-heartrate-ecg-iitr/exp-heartrate-ecg-iitr/experiment/simulation/js/page.js
+   72:20  warning  'Chart' is not defined                        no-undef
+   78:20  warning  'Chart' is not defined                        no-undef
+  115:5   warning  'PT_STAGES' is not defined                    no-undef
+  119:23  warning  'state' is not defined                        no-undef
+  119:60  warning  'state' is not defined                        no-undef
+  121:32  warning  'state' is not defined                        no-undef
+  135:18  warning  'state' is not defined                        no-undef
+  136:18  warning  'state' is not defined                        no-undef
+  136:39  warning  'state' is not defined                        no-undef
+  143:9   warning  'state' is not defined                        no-undef
+  143:28  warning  'state' is not defined                        no-undef
+  146:19  warning  'state' is not defined                        no-undef
+  146:55  warning  'state' is not defined                        no-undef
+  153:9   warning  'state' is not defined                        no-undef
+  154:69  warning  'state' is not defined                        no-undef
+  157:17  warning  'state' is not defined                        no-undef
+  196:17  warning  Unexpected lexical declaration in case block  no-case-declarations
+  206:17  warning  Unexpected lexical declaration in case block  no-case-declarations
+  212:17  warning  Unexpected lexical declaration in case block  no-case-declarations
+  218:17  warning  Unreachable code                              no-unreachable
+  233:24  warning  'state' is not defined                        no-undef
+  233:45  warning  'state' is not defined                        no-undef
+  236:33  warning  'state' is not defined                        no-undef
+  236:55  warning  'state' is not defined                        no-undef
+  237:34  warning  'state' is not defined                        no-undef
+  247:9   warning  'state' is not defined                        no-undef
+  247:38  warning  'state' is not defined                        no-undef
+  254:25  warning  'state' is not defined                        no-undef
+  255:26  warning  'state' is not defined                        no-undef
+  255:41  warning  'state' is not defined                        no-undef
+  255:59  warning  'state' is not defined                        no-undef
+  255:74  warning  'state' is not defined                        no-undef
+  268:18  warning  'state' is not defined                        no-undef
+  269:25  warning  'state' is not defined                        no-undef
+  270:26  warning  'state' is not defined                        no-undef
+  270:52  warning  'state' is not defined                        no-undef
+  270:83  warning  'state' is not defined                        no-undef
+  273:25  warning  'state' is not defined                        no-undef
+  273:59  warning  'state' is not defined                        no-undef
+  286:5   warning  'state' is not defined                        no-undef
+  293:15  warning  'loadECGData' is not defined                  no-undef
+  294:9   warning  'state' is not defined                        no-undef
+  295:9   warning  'state' is not defined                        no-undef
+  296:9   warning  'state' is not defined                        no-undef
+  307:30  warning  'state' is not defined                        no-undef
+  309:9   warning  'state' is not defined                        no-undef
+  310:9   warning  'state' is not defined                        no-undef
+  310:53  warning  'state' is not defined                        no-undef
+  310:91  warning  'state' is not defined                        no-undef
+  312:32  warning  'state' is not defined                        no-undef
+  313:39  warning  'state' is not defined                        no-undef
+  323:5   warning  'state' is not defined                        no-undef
+  324:35  warning  'state' is not defined                        no-undef
+  325:9   warning  'state' is not defined                        no-undef
+  325:30  warning  'state' is not defined                        no-undef
+  325:49  warning  'state' is not defined                        no-undef
+  326:9   warning  'state' is not defined                        no-undef
+  326:42  warning  'state' is not defined                        no-undef
+  326:64  warning  'state' is not defined                        no-undef
+  328:29  warning  'state' is not defined                        no-undef
+  328:48  warning  'state' is not defined                        no-undef
+  333:5   warning  'state' is not defined                        no-undef
+  338:9   warning  'state' is not defined                        no-undef
+  339:9   warning  'state' is not defined                        no-undef
+  339:28  warning  'state' is not defined                        no-undef
+  340:9   warning  'state' is not defined                        no-undef
+  343:9   warning  'state' is not defined                        no-undef
+  343:42  warning  'state' is not defined                        no-undef
+  346:5   warning  'state' is not defined                        no-undef
+  346:25  warning  'state' is not defined                        no-undef
+  347:28  warning  'state' is not defined                        no-undef
+  348:35  warning  'state' is not defined                        no-undef
+  356:10  warning  'state' is not defined                        no-undef
+  357:9   warning  'Swal' is not defined                         no-undef
+  365:5   warning  'state' is not defined                        no-undef
+  365:23  warning  'runPanTompkins' is not defined               no-undef
+  365:38  warning  'state' is not defined                        no-undef
+  371:5   warning  'state' is not defined                        no-undef
+  384:9   warning  'state' is not defined                        no-undef
+  385:9   warning  'state' is not defined                        no-undef
+  389:13  warning  'state' is not defined                        no-undef
+  400:5   warning  'state' is not defined                        no-undef
+  410:9   warning  'state' is not defined                        no-undef
+  412:13  warning  'state' is not defined                        no-undef
+  417:9   warning  'state' is not defined                        no-undef
+  420:13  warning  'state' is not defined                        no-undef
+  426:13  warning  'state' is not defined                        no-undef
+
+✖ 90 problems (0 errors, 90 warnings)
+
